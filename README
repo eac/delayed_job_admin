@@ -10,7 +10,7 @@ Delayed Job Admin provides a handy little interface to help with debugging faile
 
 === Installation ===
 
-script/plugin install eac-delayed_job_admin
+script/plugin install git://github.com/eac/delayed_job_admin.git
 
 rake delayed_job_admin:copy_assets
 
@@ -29,7 +29,7 @@ end
 
 === Security ===
 
-By default job management is publicly accessible, to inherit from a controller that restricts public access, create lib/delayed_admin/config.rb:
+By default job management is publicly accessible, to inherit from a controller that restricts public access, create lib/delayed_job_admin/config.rb:
 module DelayedAdmin
   module Config
   
