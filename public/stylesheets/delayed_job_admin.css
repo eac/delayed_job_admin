@@ -1,27 +1,26 @@
 /* Global */
 
-#page { 
-  color: black;
+#delayed_job_admin { 
   background-color: #00a6ff;
   font-size: 1.25em;
   padding: 5em;
 }
 
-#page a {
-  outline: none;
-}
-
-#page pre { background-color: #e6f6ff; }
-
-#page a.dangerous { 
-  color: #ff8b00;
-  text-decoration: none;    
-}
-
-#page a.dangerous:hover { 
-  color: white;
-  background-color: #ff8b00; 
-}
+  #delayed_job_admin a {
+    outline: none;
+  }
+  
+  #delayed_job_admin pre { background-color: #e6f6ff; }
+  
+  #delayed_job_admin a.dangerous { 
+    color: #ff8b00;
+    text-decoration: none;    
+  }
+  
+  #delayed_job_admin a.dangerous:hover { 
+    color: white;
+    background-color: #ff8b00; 
+  }
 
 .backtrace { 
   margin-left: 1.5em;

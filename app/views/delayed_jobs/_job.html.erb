@@ -12,22 +12,22 @@
       <span class="title">Priority</span> <%= job.priority %>
     </div>
     <% end %>
-    <% unless job.last_error? #if job.locked_at? %>
+    <% if job.locked_at? %>
     <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943<%#= job.locked_by  %>
-    <span class="title">on</span>    August 11, 2009 20:13<%#= job.locked_at.to_s(:long)  %>
+    <span class="title">Locked by</span> <%= job.locked_by  %>
+    <span class="title">on</span> <%= job.locked_at.to_s(:long)  %>
     </div>
     <% end %>
-    <% if job.failed? || job.last_error? %>
+    <% if job.failed? %>
     <div class="failed">
-     <%= 2.ordinalize   %> <%#= job.attempts   %>   
-      <span class="title">attempt failed</span> August 11, 2009 20:13 <%#= job.failed_at.to_s(:long)  %>
+     <%= job.attempts.ordinalize   %> 
+      <span class="title">attempt failed</span> <%= job.failed_at.to_s(:long)  %>
       <pre class="backtrace"><%= job.last_error %></pre>
     </div>
     <% end %>
     <div class="timestamps">
-      <span class="titles"><em>Created</em></span> <%= job.created_at.to_s(:long) %>
-      <span class="titles"><em>last updated</em></span> <%= job.updated_at.to_s(:long) %>
+      <span class="title">Created</span> <%= job.created_at.to_s(:long) %>
+      <span class="title">last updated</span> <%= job.updated_at.to_s(:long) %>
     </div>
   </div>
 </li>    
