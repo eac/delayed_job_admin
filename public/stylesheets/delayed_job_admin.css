@@ -1,0 +1,107 @@
+/* Global */
+
+#page { 
+  color: black;
+  background-color: #00a6ff;
+  font-size: 1.25em;
+  padding: 5em;
+}
+
+#page a {
+  outline: none;
+}
+
+#page pre { background-color: #e6f6ff; }
+
+#page a.dangerous { 
+  color: #ff8b00;
+  text-decoration: none;    
+}
+
+#page a.dangerous:hover { 
+  color: white;
+  background-color: #ff8b00; 
+}
+
+.backtrace { 
+  margin-left: 1.5em;
+  overflow: auto;
+}
+ 
+  .backtrace:first-line { font-weight: bold; }
+
+/* Overview */
+.overview { margin-left: 4em; }
+
+  .overview a { margin-right: 0.5em; }
+
+  .overview .total_jobs  { color: white;   }
+  .overview .locked_jobs { color: yellow;  }
+  .overview .failed_jobs { color: #ff8b00; }
+    
+  .statistic {
+    display: inline; 
+    font-size: 2em;
+    text-align: center;
+  }
+ 
+    .statistic .count { font-weight: bold; }
+    .statistic .title { color: black;      }
+    
+    a.statistic { 
+      border-top: 0.15em solid #00a6ff; 
+      border-bottom: none; 
+      font-weight: bold; 
+      opacity: 0.85;
+      padding: 0.5em; 
+    }
+    
+    a.statistic:hover,
+    a.statistic.active {
+      border-color: #80d2ff;
+      opacity: 1;
+    }
+
+/* Jobs */
+
+.jobs { 
+  background-color: #80d2ff;
+  max-width: 70em;
+  padding: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius:    1em;
+}
+
+.job { 
+  background-color: white;
+  border-left: 0.15em solid white;
+  list-style-type: none;
+  margin: 0.5em;
+  padding: 1em;
+  -webkit-box-shadow: 0.25em 0.25em 0.5em rgba(0,0,0,0.6); 
+  -moz-box-shadow:    0.25em 0.25em 0.5em rgba(0,0,0,0.6);
+}
+
+  .job .details_link { font-size: 1.25em; }
+  
+  .job a { 
+    color: #80d2ff;                         
+    margin-left: 3em;
+    padding: 1em;
+  }
+  
+  .job a:hover, 
+  .job a:focus, 
+  .job a:active { color: #00a6ff; }
+   
+  .job.locked,
+  .job.failed.locked { border-color: yellow;  }
+  .job.failed        { border-color: #ff8b00; }
+    
+  .job .details { 
+    background-color: white;
+    color: black;
+    margin: 1em 0 0 1.5em;
+   } 
+   
+     .details .title { font-weight: bold; }

@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+  <title>ChatterBox Administration</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.0.0b1/build/cssfonts/fonts-min.css&3.0.0b1/build/cssreset/reset-min.css&3.0.0b1/build/cssbase/base-min.css">
+  <link href="../public/stylesheets/delayed_job_admin.css" media="all" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("jquery", "1.3.2");
+  </script>
+  <style type="text/css">
+    html             { color: white; background-color: black; }
+    h1.logo          { padding: 0.5em; }
+    #header .current { color: #00a6ff; }
+    #header h2       { display: inline; margin-right: 2em; }
+    #header          { text-align: center; }
+  </style>
+</head>
+<body>
+ 
+      <h1 class="logo">Examples R Us Administration</h1>
+      <div id="header">
+        <h2>Dashboard</h2>
+        <h2 class="current">Delayed Jobs</h2>
+        <h2>Secret Data</h2>
+      </div>      
+
+      <div id="page">
+  <div class="overview">
+    
+      <a class="failed_jobs statistic " href="#">
+        <span class="count">0</span>
+        <span class="title">failed</span>
+      </a>
+    
+      <a class="locked_jobs statistic " href="#">
+        <span class="count">0</span>
+        <span class="title">locked</span>
+      </a>
+    
+      <a class="total_jobs statistic active" href="#">
+        <span class="count">25</span>
+        <span class="title">total</span>
+      </a>
+    
+  </div>
+  <ul class="jobs">
+    <li id='delayed_job_12' class="job ">
+  <div class="summary">
+    11 Aug 23:34
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/12" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 11, 2009 23:34
+      <span class="titles"><em>last updated</em></span> August 11, 2009 23:34
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_13' class="job ">
+  <div class="summary">
+    11 Aug 23:34
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/13" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 11, 2009 23:34
+      <span class="titles"><em>last updated</em></span> August 11, 2009 23:34
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_14' class="job ">
+  <div class="summary">
+    11 Aug 23:35
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/14" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 11, 2009 23:35
+      <span class="titles"><em>last updated</em></span> August 11, 2009 23:35
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_15' class="job ">
+  <div class="summary">
+    11 Aug 23:58
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/15" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 11, 2009 23:58
+      <span class="titles"><em>last updated</em></span> August 11, 2009 23:58
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_16' class="job ">
+  <div class="summary">
+    12 Aug 00:19
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/16" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 00:19
+      <span class="titles"><em>last updated</em></span> August 12, 2009 00:19
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_17' class="job ">
+  <div class="summary">
+    12 Aug 00:25
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/17" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 00:25
+      <span class="titles"><em>last updated</em></span> August 12, 2009 00:25
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_18' class="job ">
+  <div class="summary">
+    12 Aug 01:05
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/18" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 01:05
+      <span class="titles"><em>last updated</em></span> August 12, 2009 01:05
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_19' class="job ">
+  <div class="summary">
+    12 Aug 01:06
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/19" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 01:06
+      <span class="titles"><em>last updated</em></span> August 12, 2009 01:06
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_20' class="job ">
+  <div class="summary">
+    12 Aug 01:15
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/20" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 01:15
+      <span class="titles"><em>last updated</em></span> August 12, 2009 01:15
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_21' class="job ">
+  <div class="summary">
+    12 Aug 01:28
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/21" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 01:28
+      <span class="titles"><em>last updated</em></span> August 12, 2009 01:28
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_22' class="job ">
+  <div class="summary">
+    12 Aug 07:50
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/22" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 07:50
+      <span class="titles"><em>last updated</em></span> August 12, 2009 07:50
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_23' class="job ">
+  <div class="summary">
+    12 Aug 23:08
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/23" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 12, 2009 23:08
+      <span class="titles"><em>last updated</em></span> August 12, 2009 23:08
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_24' class="job ">
+  <div class="summary">
+    13 Aug 21:00
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/24" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 13, 2009 21:00
+      <span class="titles"><em>last updated</em></span> August 13, 2009 21:00
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_25' class="job ">
+  <div class="summary">
+    19 Aug 21:41
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/25" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 21:41
+      <span class="titles"><em>last updated</em></span> August 19, 2009 21:41
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_26' class="job ">
+  <div class="summary">
+    19 Aug 22:07
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/26" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 22:07
+      <span class="titles"><em>last updated</em></span> August 19, 2009 22:07
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_27' class="job ">
+  <div class="summary">
+    19 Aug 22:09
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/27" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 22:09
+      <span class="titles"><em>last updated</em></span> August 19, 2009 22:09
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_28' class="job ">
+  <div class="summary">
+    19 Aug 23:20
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/28" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 23:20
+      <span class="titles"><em>last updated</em></span> August 19, 2009 23:20
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_29' class="job ">
+  <div class="summary">
+    19 Aug 23:26
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/29" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 23:26
+      <span class="titles"><em>last updated</em></span> August 19, 2009 23:26
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_30' class="job ">
+  <div class="summary">
+    19 Aug 23:26
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/30" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 23:26
+      <span class="titles"><em>last updated</em></span> August 19, 2009 23:26
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_31' class="job ">
+  <div class="summary">
+    19 Aug 23:31
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/31" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 19, 2009 23:31
+      <span class="titles"><em>last updated</em></span> August 19, 2009 23:31
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_32' class="job ">
+  <div class="summary">
+    20 Aug 01:50
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/32" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 20, 2009 01:50
+      <span class="titles"><em>last updated</em></span> August 20, 2009 01:50
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_33' class="job ">
+  <div class="summary">
+    24 Aug 19:05
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/33" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 24, 2009 19:05
+      <span class="titles"><em>last updated</em></span> August 24, 2009 19:05
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_34' class="job ">
+  <div class="summary">
+    25 Aug 02:59
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/34" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 25, 2009 02:59
+      <span class="titles"><em>last updated</em></span> August 25, 2009 02:59
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_10' class="job ">
+  <div class="summary">
+    25 Aug 23:35
+    <a href="#details_link" class="details_link">TwitterStatusUpdateJob 
+chatter_id: 203
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/10" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+    <div class="priority">
+      <span class="title">Priority</span> 10
+    </div>
+    
+    
+    
+    <div class="failed">
+     2nd    
+      <span class="title">attempt failed</span> August 11, 2009 20:13 
+      <pre class="backtrace">Couldn't find Fan with ID=1234
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:1591:in `find_one'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:1574:in `find_from_ids'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:616:in `find'
+(irb):7:in `irb_binding'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+    </div>
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 11, 2009 23:03
+      <span class="titles"><em>last updated</em></span> August 25, 2009 23:37
+    </div>
+  </div>
+</li>    
+ <li id='delayed_job_35' class="job ">
+  <div class="summary">
+    26 Aug 21:41
+    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
+fan_id: 187
+</a>
+    <span class="actions">
+      <a href="/delayed_jobs/35" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+    </span>
+  </div>
+  <div class="details">
+    
+        <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943
+    <span class="title">on</span>    August 11, 2009 20:13
+    </div>
+    
+    
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> August 26, 2009 21:41
+      <span class="titles"><em>last updated</em></span> August 26, 2009 21:41
+    </div>
+  </div>
+</li>    
+ 
+  </ul>
+</div>
+
+  <script src="../public/javascripts/delayed_job_admin.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+  
+    $(document).ready(function() {
+      
+      // Toggle
+      $('.job .details').hide();
+      
+      $('.job .details_link').click(function() { 
+        $(this).parents('.job').children('.details').slideToggle('fast');
+      });
+      
+      // Filter
+      $('.failed_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this, '.failed');     
+      })
+      $('.locked_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this, '.locked');  
+      })
+      $('.total_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this);      
+      })
+   
+    });
+  </script>
+
+
+
+
+
+   
+</body>
+</html>

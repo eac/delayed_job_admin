@@ -1,0 +1,42 @@
+<div id="page">
+  <div class="overview">
+    <% @statistics.each do |title, count| %>
+      <a class="<%= title %>_jobs statistic <%= 'active' if title == :total %>" href="#">
+        <span class="count"><%= count %></span>
+        <span class="title"><%= title %></span>
+      </a>
+    <% end %>
+  </div>
+  <ul class="jobs">
+    <%= render :partial => 'job', :collection => @jobs %>
+  </ul>
+</div>
+
+<% content_for(:javascript) do %>
+  <%= javascript_include_tag 'delayed_job_admin' %>
+  
+  <script type="text/javascript">
+  
+    $(document).ready(function() {
+      
+      // Toggle
+      $('.job .details').hide();
+      
+      $('.job .details_link').click(function() { 
+        $(this).parents('.job').children('.details').slideToggle('fast');
+      });
+      
+      // Filter
+      $('.failed_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this, '.failed');     
+      })
+      $('.locked_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this, '.locked');  
+      })
+      $('.total_jobs').click(function() {
+        DelayedJob.UI.filterJobs(this);      
+      })
+   
+    });
+  </script>
+<% end %>

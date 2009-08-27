@@ -1,0 +1,34 @@
+<li id='<%= dom_id(job) %>' class="job <%= job.statuses.join(' ') %>">
+  <div class="summary">
+    <%= job.run_at.to_s(:short) %>
+    <a href="#details_link" class="details_link"><%= job.humanized_handler %></a>
+    <span class="actions">
+      <%= link_to 'delete', delayed_job_path(job), :method => :delete, :class => 'dangerous' %>
+    </span>
+  </div>
+  <div class="details">
+    <% if job.priority? %>
+    <div class="priority">
+      <span class="title">Priority</span> <%= job.priority %>
+    </div>
+    <% end %>
+    <% unless job.last_error? #if job.locked_at? %>
+    <div class="locked">
+    <span class="title">Locked by</span> Pid 23343-2943<%#= job.locked_by  %>
+    <span class="title">on</span>    August 11, 2009 20:13<%#= job.locked_at.to_s(:long)  %>
+    </div>
+    <% end %>
+    <% if job.failed? || job.last_error? %>
+    <div class="failed">
+     <%= 2.ordinalize   %> <%#= job.attempts   %>   
+      <span class="title">attempt failed</span> August 11, 2009 20:13 <%#= job.failed_at.to_s(:long)  %>
+      <pre class="backtrace"><%= job.last_error %></pre>
+    </div>
+    <% end %>
+    <div class="timestamps">
+      <span class="titles"><em>Created</em></span> <%= job.created_at.to_s(:long) %>
+      <span class="titles"><em>last updated</em></span> <%= job.updated_at.to_s(:long) %>
+    </div>
+  </div>
+</li>    
+ 
