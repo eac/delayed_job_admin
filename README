@@ -1,0 +1,41 @@
+=== What's this? ===
+
+Delayed Job Admin provides a handy little interface to help with debugging failed jobs created by the delayed_job plugin. Explore /examples for more details.
+
+=== Requirements ===
+
+ Supports Safari 3 and Firefox 3.5
+ Requires jQuery 1.3.2 for JavaScript behavior
+ CSS assumes a reasonable default style (e.g. Yahoo's reset.css)
+
+=== Installation ===
+
+script/plugin install eac-delayed_job_admin
+
+rake delayed_job_admin:copy_assets
+
+Ensure the style is included in your layout:
+  <%= stylesheet_link_tag    'delayed_job_admin' %>
+  
+Before the </body> tag in your layout, add:
+  <%= yield :javascript %>  
+
+=== Usage ===
+
+Access via delayed_jobs_path at /delayed_jobs, or define a custom route, example:
+map.namespace :admin do |admin|
+  admin.resources :jobs, :namespace => nil, :controller => 'delayed_jobs'
+end
+
+=== Security ===
+
+By default job management is publicly accessible, to inherit from a controller that restricts public access, create lib/delayed_admin/config.rb:
+module DelayedAdmin
+  module Config
+  
+    def self.parent_controller_class
+      YourSecureController
+    end
+    
+  end
+end
