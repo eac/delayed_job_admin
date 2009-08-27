@@ -27,641 +27,744 @@
         <h2>Secret Data</h2>
       </div>      
 
-      <div id="page">
-  <div class="overview">
-    
-      <a class="failed_jobs statistic " href="#">
-        <span class="count">0</span>
-        <span class="title">failed</span>
+          <div id="delayed_job_admin">
+        <div class="overview">
+
+            <a class="failed_jobs statistic " href="#">
+              <span class="count">15</span>
+              <span class="title">failed</span>
+            </a>
+
+            <a class="locked_jobs statistic " href="#">
+              <span class="count">3</span>
+              <span class="title">locked</span>
+            </a>
+
+            <a class="total_jobs statistic active" href="#">
+              <span class="count">20</span>
+              <span class="title">total</span>
+            </a>
+
+        </div>
+        <ul class="jobs">
+          <li id='delayed_job_50' class="job failed locked">
+        <div class="summary">
+          27 Aug 09:36
+          <a href="#details_link" class="details_link">ErrorJob {}
+
       </a>
-    
-      <a class="locked_jobs statistic " href="#">
-        <span class="count">0</span>
-        <span class="title">locked</span>
+          <span class="actions">
+            <a href="/delayed_jobs/50" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+          <div class="locked">
+          <span class="title">Locked by</span> host:example-host.local pid:59093
+          <span class="title">on</span> August 27, 2009 09:36
+          </div>
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:36
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Fan with id of '12345'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):41:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:36
+            <span class="title">last updated</span> August 27, 2009 09:36
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_48' class="job failed locked">
+        <div class="summary">
+          27 Aug 09:36
+          <a href="#details_link" class="details_link">ErrorJob {}
+
       </a>
-    
-      <a class="total_jobs statistic active" href="#">
-        <span class="count">25</span>
-        <span class="title">total</span>
+          <span class="actions">
+            <a href="/delayed_jobs/48" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+          <div class="locked">
+          <span class="title">Locked by</span> host:example-host.local pid:59093
+          <span class="title">on</span> August 27, 2009 09:36
+          </div>
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:36
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Fan with id of '12345'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):41:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:36
+            <span class="title">last updated</span> August 27, 2009 09:36
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_36' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
       </a>
-    
-  </div>
-  <ul class="jobs">
-    <li id='delayed_job_12' class="job ">
-  <div class="summary">
-    11 Aug 23:34
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/12" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 11, 2009 23:34
-      <span class="titles"><em>last updated</em></span> August 11, 2009 23:34
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_13' class="job ">
-  <div class="summary">
-    11 Aug 23:34
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/13" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 11, 2009 23:34
-      <span class="titles"><em>last updated</em></span> August 11, 2009 23:34
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_14' class="job ">
-  <div class="summary">
-    11 Aug 23:35
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/14" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 11, 2009 23:35
-      <span class="titles"><em>last updated</em></span> August 11, 2009 23:35
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_15' class="job ">
-  <div class="summary">
-    11 Aug 23:58
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/15" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 11, 2009 23:58
-      <span class="titles"><em>last updated</em></span> August 11, 2009 23:58
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_16' class="job ">
-  <div class="summary">
-    12 Aug 00:19
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/16" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 00:19
-      <span class="titles"><em>last updated</em></span> August 12, 2009 00:19
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_17' class="job ">
-  <div class="summary">
-    12 Aug 00:25
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/17" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 00:25
-      <span class="titles"><em>last updated</em></span> August 12, 2009 00:25
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_18' class="job ">
-  <div class="summary">
-    12 Aug 01:05
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/18" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 01:05
-      <span class="titles"><em>last updated</em></span> August 12, 2009 01:05
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_19' class="job ">
-  <div class="summary">
-    12 Aug 01:06
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/19" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 01:06
-      <span class="titles"><em>last updated</em></span> August 12, 2009 01:06
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_20' class="job ">
-  <div class="summary">
-    12 Aug 01:15
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/20" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 01:15
-      <span class="titles"><em>last updated</em></span> August 12, 2009 01:15
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_21' class="job ">
-  <div class="summary">
-    12 Aug 01:28
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/21" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 01:28
-      <span class="titles"><em>last updated</em></span> August 12, 2009 01:28
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_22' class="job ">
-  <div class="summary">
-    12 Aug 07:50
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/22" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 07:50
-      <span class="titles"><em>last updated</em></span> August 12, 2009 07:50
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_23' class="job ">
-  <div class="summary">
-    12 Aug 23:08
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/23" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 12, 2009 23:08
-      <span class="titles"><em>last updated</em></span> August 12, 2009 23:08
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_24' class="job ">
-  <div class="summary">
-    13 Aug 21:00
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/24" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 13, 2009 21:00
-      <span class="titles"><em>last updated</em></span> August 13, 2009 21:00
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_25' class="job ">
-  <div class="summary">
-    19 Aug 21:41
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/25" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 21:41
-      <span class="titles"><em>last updated</em></span> August 19, 2009 21:41
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_26' class="job ">
-  <div class="summary">
-    19 Aug 22:07
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/26" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 22:07
-      <span class="titles"><em>last updated</em></span> August 19, 2009 22:07
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_27' class="job ">
-  <div class="summary">
-    19 Aug 22:09
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/27" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 22:09
-      <span class="titles"><em>last updated</em></span> August 19, 2009 22:09
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_28' class="job ">
-  <div class="summary">
-    19 Aug 23:20
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/28" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 23:20
-      <span class="titles"><em>last updated</em></span> August 19, 2009 23:20
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_29' class="job ">
-  <div class="summary">
-    19 Aug 23:26
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/29" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 23:26
-      <span class="titles"><em>last updated</em></span> August 19, 2009 23:26
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_30' class="job ">
-  <div class="summary">
-    19 Aug 23:26
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/30" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 23:26
-      <span class="titles"><em>last updated</em></span> August 19, 2009 23:26
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_31' class="job ">
-  <div class="summary">
-    19 Aug 23:31
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/31" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 19, 2009 23:31
-      <span class="titles"><em>last updated</em></span> August 19, 2009 23:31
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_32' class="job ">
-  <div class="summary">
-    20 Aug 01:50
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/32" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 20, 2009 01:50
-      <span class="titles"><em>last updated</em></span> August 20, 2009 01:50
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_33' class="job ">
-  <div class="summary">
-    24 Aug 19:05
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/33" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 24, 2009 19:05
-      <span class="titles"><em>last updated</em></span> August 24, 2009 19:05
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_34' class="job ">
-  <div class="summary">
-    25 Aug 02:59
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/34" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 25, 2009 02:59
-      <span class="titles"><em>last updated</em></span> August 25, 2009 02:59
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_10' class="job ">
-  <div class="summary">
-    25 Aug 23:35
-    <a href="#details_link" class="details_link">TwitterStatusUpdateJob 
-chatter_id: 203
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/10" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-    <div class="priority">
-      <span class="title">Priority</span> 10
-    </div>
-    
-    
-    
-    <div class="failed">
-     2nd    
-      <span class="title">attempt failed</span> August 11, 2009 20:13 
-      <pre class="backtrace">Couldn't find Fan with ID=1234
-/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:1591:in `find_one'
-/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:1574:in `find_from_ids'
-/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/base.rb:616:in `find'
-(irb):7:in `irb_binding'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
-    </div>
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 11, 2009 23:03
-      <span class="titles"><em>last updated</em></span> August 25, 2009 23:37
-    </div>
-  </div>
-</li>    
- <li id='delayed_job_35' class="job ">
-  <div class="summary">
-    26 Aug 21:41
-    <a href="#details_link" class="details_link">DownloadTwitterFriendsJob 
-fan_id: 187
-</a>
-    <span class="actions">
-      <a href="/delayed_jobs/35" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
-    </span>
-  </div>
-  <div class="details">
-    
-        <div class="locked">
-    <span class="title">Locked by</span> Pid 23343-2943
-    <span class="title">on</span>    August 11, 2009 20:13
-    </div>
-    
-    
-    <div class="timestamps">
-      <span class="titles"><em>Created</em></span> August 26, 2009 21:41
-      <span class="titles"><em>last updated</em></span> August 26, 2009 21:41
-    </div>
-  </div>
-</li>    
- 
-  </ul>
-</div>
+          <span class="actions">
+            <a href="/delayed_jobs/36" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Fan with id of '12345'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:29
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_49' class="job failed locked">
+        <div class="summary">
+          27 Aug 09:36
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/49" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+          <div class="locked">
+          <span class="title">Locked by</span> host:example-host.local pid:59093
+          <span class="title">on</span> August 27, 2009 09:36
+          </div>
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:36
+            <pre class="backtrace">ArgumentError: Too many arguments (3 for 2)
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):41:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:36
+            <span class="title">last updated</span> August 27, 2009 09:36
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_51' class="job ">
+        <div class="summary">
+          27 Aug 09:37
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/51" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:37
+            <span class="title">last updated</span> August 27, 2009 09:37
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_39' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/39" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ArgumentError: Too many arguments (3 for 2)
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_52' class="job ">
+        <div class="summary">
+          27 Aug 09:37
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/52" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:37
+            <span class="title">last updated</span> August 27, 2009 09:37
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_53' class="job ">
+        <div class="summary">
+          27 Aug 09:37
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/53" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:37
+            <span class="title">last updated</span> August 27, 2009 09:37
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_54' class="job ">
+        <div class="summary">
+          27 Aug 09:37
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/54" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:37
+            <span class="title">last updated</span> August 27, 2009 09:37
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_55' class="job ">
+        <div class="summary">
+          27 Aug 09:37
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/55" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:37
+            <span class="title">last updated</span> August 27, 2009 09:37
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_41' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/41" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ArgumentError: Too many arguments (3 for 2)
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_38' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/38" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_40' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/40" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_44' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/44" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_43' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/43" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_45' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/45" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_42' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/42" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_37' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/37" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_47' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/47" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+       <li id='delayed_job_46' class="job failed">
+        <div class="summary">
+          27 Aug 09:32
+          <a href="#details_link" class="details_link">ErrorJob {}
+
+      </a>
+          <span class="actions">
+            <a href="/delayed_jobs/46" class="dangerous" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '4ZJ0kSVF//xTAZrMhsuSnZp6fS1MRcO1jds/QkcDsP0='); f.appendChild(s);f.submit();return false;">delete</a>
+          </span>
+        </div>
+        <div class="details">
+
+
+
+          <div class="failed">
+           1st 
+            <span class="title">attempt failed</span> August 27, 2009 09:31
+            <pre class="backtrace">ActiveRecord::RecordNotFound: Could not find Message with id of '9385'
+      (irb):3:in `perform'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:217:in `invoke_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:92:in `run_with_lock'
+      /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:91:in `run_with_lock'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:155:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `each'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:154:in `reserve_and_run_one_job'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:201:in `work_off'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `times'
+      /path/to/example/app/vendor/plugins/delayed_job/lib/delayed/job.rb:200:in `work_off'
+      (irb):28:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52:in `irb_binding'
+      /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/irb/workspace.rb:52</pre>
+          </div>
+
+          <div class="timestamps">
+            <span class="title">Created</span> August 27, 2009 09:30
+            <span class="title">last updated</span> August 27, 2009 09:31
+          </div>
+        </div>
+      </li>    
+
+        </ul>
+      </div>
 
   <script src="../public/javascripts/delayed_job_admin.js" type="text/javascript"></script>
   
