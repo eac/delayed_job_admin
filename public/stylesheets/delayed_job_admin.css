@@ -24,7 +24,7 @@
 
 .backtrace { 
   margin-left: 1.5em;
-  overflow: auto;
+  overflow: hidden;
 }
  
   .backtrace:first-line { font-weight: bold; }
@@ -71,7 +71,7 @@
   -moz-border-radius:    1em;
 }
 
-.job { 
+.job {   
   background-color: white;
   border-left: 0.15em solid white;
   list-style-type: none;
@@ -81,11 +81,18 @@
   -moz-box-shadow:    0.25em 0.25em 0.5em rgba(0,0,0,0.6);
 }
 
-  .job .details_link { font-size: 1.25em; }
+  .job .actions { 
+    float: right; 
+    margin-right: 12em;
+   }
+   
+  .job .details_link { 
+    font-size: 1.25em;
+    margin-left: 3em;
+  }
   
   .job a { 
     color: #80d2ff;                         
-    margin-left: 3em;
     padding: 1em;
   }
   
