@@ -1,6 +1,6 @@
 === What's this? ===
 
-Delayed Job Admin provides a handy little interface to help with debugging failed jobs created by the delayed_job plugin. Explore /examples for more details.
+Delayed Job Admin provides a handy little interface to help with debugging failed jobs created by the delayed_job plugin. Explore /examples for more details. A static example is at http://eric.datacratic.com/projects/delayed_job_admin/examples/index.html.
 
 === Requirements ===
 
