@@ -30,7 +30,7 @@ end
 === Security ===
 
 By default job management is publicly accessible, to inherit from a controller that restricts public access, create lib/delayed_job_admin/config.rb:
-module DelayedAdmin
+module DelayedJobAdmin
   module Config
   
     def self.parent_controller_class
